@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leyuk\\source\\repos\\Leyukezer-Sys\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\DivisaoSubRedes.csproj": {}
+    "C:\\Users\\leyuk\\Documents\\GitHub\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\DivisaoSubRedes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leyuk\\source\\repos\\Leyukezer-Sys\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\DivisaoSubRedes.csproj": {
+    "C:\\Users\\leyuk\\Documents\\GitHub\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\DivisaoSubRedes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leyuk\\source\\repos\\Leyukezer-Sys\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\DivisaoSubRedes.csproj",
+        "projectUniqueName": "C:\\Users\\leyuk\\Documents\\GitHub\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\DivisaoSubRedes.csproj",
         "projectName": "DivisaoSubRedes",
-        "projectPath": "C:\\Users\\leyuk\\source\\repos\\Leyukezer-Sys\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\DivisaoSubRedes.csproj",
+        "projectPath": "C:\\Users\\leyuk\\Documents\\GitHub\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\DivisaoSubRedes.csproj",
         "packagesPath": "C:\\Users\\leyuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leyuk\\source\\repos\\Leyukezer-Sys\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\obj\\",
+        "outputPath": "C:\\Users\\leyuk\\Documents\\GitHub\\Redes_Computadores\\Sub-Redes\\DivisaoSubRedes\\DivisaoSubRedes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

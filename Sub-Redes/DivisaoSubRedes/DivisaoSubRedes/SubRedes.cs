@@ -8,7 +8,7 @@ public class SubRedes
     public int quantidadeDeHosts = 0, quantidadeDeSubRedes;
     public char tipo = 'I';
     int diferencaIps = 0;
-    string finalMascC = "", finalMascB = "";
+    string finalMascC = "", finalMascB = "", finalMascA = "";
     public char ClasseIp(string ipRede)
     {
         char tipoRede = 'I';
@@ -49,19 +49,26 @@ public class SubRedes
         {
             if (tipo == 'A')
             {
-                for (int i = 0; i < mascara.Length; i++)
+                if (mascara.ToCharArray(0, 3).ToString() != "255")
                 {
-
-                    if (contP >= 1)
-                    {
-                        mascaraSubRede += mascara[i];
-                    }
-                    if (mascara[i] == '.')
-                    {
-                        contP++;
-                    }
+                    Console.WriteLine("Mascara Inválida");
+                    tipo = 'I';
                 }
-                CalcularHosts(mascaraSubRede);
+                else
+                {
+                    for (int i = 0; i < mascara.Length; i++)
+                    {
+                        if (contP >= 1)
+                        {
+                            mascaraSubRede += mascara[i];
+                        }
+                        if (mascara[i] == '.')
+                        {
+                            contP++;
+                        }
+                    }
+                    CalcularHosts(mascaraSubRede);
+                }
             }
             else if (tipo == 'B')
             {
@@ -135,6 +142,7 @@ public class SubRedes
                     cont++;
                 }
             }
+            finalMascA = referencia;
             masc = int.Parse(referencia);
 
             while (masc != 0)
@@ -153,12 +161,10 @@ public class SubRedes
             quantidadeDeHosts = Convert.ToInt32(Math.Pow(2, cont0)) - 2;
             quantidadeDeSubRedes = Convert.ToInt32(Math.Pow(2, cont1));
             diferencaIps = 256 - Convert.ToInt32(referencia);
-
-            cont0 = 0;
-            cont1 = 0;
         }
         else if (tipo == 'B')
         {
+            cont1 = 0;
             cont0 = 8;
             for (int i = 0; i < subRede.Length; i++)
             {
@@ -191,13 +197,11 @@ public class SubRedes
             quantidadeDeHosts = Convert.ToInt32(Math.Pow(2, cont0)) - 2;
             quantidadeDeSubRedes = Convert.ToInt32(Math.Pow(2, cont1));
             diferencaIps = 256 - Convert.ToInt32(referencia);
-
-            cont0 = 0;
-            cont1 = 0;
-
         }
         else if (tipo == 'C')
         {
+            cont1 = 0;
+            cont0 = 8;
             referencia = subRede;
             finalMascC = subRede;
             masc = int.Parse(referencia);
@@ -217,8 +221,6 @@ public class SubRedes
             quantidadeDeHosts = Convert.ToInt32(Math.Pow(2, cont0)) - 2;
             quantidadeDeSubRedes = Convert.ToInt32(Math.Pow(2, cont1));
             diferencaIps = 256 - Convert.ToInt32(referencia);
-            cont0 = 0;
-            cont1 = 0;
         }
         else
         {
@@ -233,7 +235,7 @@ public class SubRedes
         int contP = 0;
         if (tipo == 'A')
         {
-
+            Console.WriteLine("Falta Terminar!");
         }
         else if (tipo == 'B')
         {
